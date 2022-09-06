@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <title>Indy Parks and Recreation</title>
+        <style>
+            body
+            {
+                background-color: #d8ecf3;
+                font-family:"Oxygen";
+            }
+            div.head
+            {
+                background-color: #1e90ff;
+                background-image: url("images/ParksLanding3.jpg");
+                text-align: center;
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            div.links
+            {
+                background-color: #1e90ff;
+                text-align: center;
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            table.head
+            {
+                width: 100%;
+            }
+            a
+            {
+                color: #ffffff;
+                padding: 9px;
+                font-size: 16px;
+            }
+            div.box1
+            {
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #ffffff;
+                padding: 30px;
+            }
+            h2
+            {
+                color:#0000ff;
+            }
+            span.title
+            {
+                color:#6495ed;
+            }
+            p
+            {
+                line-height: 1.7em;
+            }
+            td
+            {
+                text-align: center;
+            }
+            img.icons
+            {
+                height: 150px;
+                width: 150px;
+            }
+            img.am
+            {
+                
+                height: 55px;
+                width: 55px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            img.social
+            {
+                height: 38px;
+                width: 38px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            div.box2
+            {
+                text-align: center;
+                padding: 25px;
+                margin-left: 135px;
+                margin-right: 135px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #ffffff;
+            }
+        </style>
+        <script>
+            alert("Press space bar to go between home and park pages.");
+            document.addEventListener('keydown', dealWithKeyboard,false);
+            function dealWithKeyboard(e) {
+                if (e.keyCode == "32") {
+                    window.location.href = "perrypark.html";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "head">
+            <img src="images/parkslogo.png">;
+        </div>
+        <!--<div class = "links">
+            <a>Park Map</a><a>Park List</a><a>Event Calendar</a><a>Programs, Rentals, and Memberships</a><a>Eagle Creek Park</a><a>Amenities</a><a>Greenways</a><a>Administration</a><a>Instagram Photo Map</a>
+        </div>-->
+        <div class = "links">
+            <table class = "head">
+            <tr><td><a class = "menu">Park Map</a></td><td><a class = "menu">Park List</a></td><td><a class = "menu">Event Calendar</a></td><td><a class = "menu">Programs, Rentals, and Memberships</a></td><td><a class = "menu">Eagle Creek Park</a></td></tr></table><table class = "head"><tr><td><a class = "menu">Amenities</a></td><td><a class = "menu">Greenways</a></td><td><a class = "menu">Administration</a></td><td><a class = "menu">Instagram Photo Map</a></td></tr></table>
+            </table>
+        </div>
+        <div class = "box1">
+            <h2>Our Vision and Mission</h1>
+            <p><span class = "title">Vision</span><br>With over a century of history advancing the value of parks, Indy Parks is committed to protecting and enhancing the community's assets for the future. We will be a leader in making Indianapolis a vibrant, happy and healthy place to live. By providing premier greenspaces and recreation opportunities, we will connect all residents to nature, to the community, and to themselves. Our work is vital to contributing to the econom​​ic, social and environmental health of our city.  </p>
+            <p><span class = "title">Mission</span><br> We connect communities by providing places and experiences that inspire healthy living, social engagement, and a love of nature.</p>
+            <p><span class="title">Indy Parks offers</span><br>211 parks, 11,254 acres, 125 playgrounds, 155 sports fields, 135 miles of trails, 23 recreation centers and nature centers, 19 aquatic centers, 21 spray grounds, 13 golf courses and 4 dog parks. </p>
+        </div>
+        <div class = "box1">
+            <table width = "100%">
+                <tr>
+                    <td><img class = "icons" src = "images/newspaper.png"></td><td><img class = "icons" src = "images/calendar.png"></td><td><img class = "icons" src = "images/classes.png"></td>
+                </tr>
+                <tr>
+                    <td>Indy Parks News</td><td>Upcoming Events</td><td>Classes and Programs</td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div>
+        <div class = "box2">
+            <img class = "am" src = "images/Sledding.jpg"><img class = "am" src = "images/Arts.jpg"><img class = "am" src = "images/BarkPark.jpg"><img class = "am" src = "images/Swim.jpg"><img class = "am" src = "images/mountainbiking.jpg"><img class = "am" src = "images/Greenways.jpg"><img class = "am" src = "images/Golf.jpg">
+        </div>
+        <div class = "box2">
+            <img class = "social" src = "images/pinterest.png"><img class = "social" src = "images/youtube.png"><img class = "social" src = "images/LinkedIn.png"><img class = "social" src = "images/facebook.png"><img class = "social" src = "images/twitter.png">
+        </div>
+    </body>
+</html>

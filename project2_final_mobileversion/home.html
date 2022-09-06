@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+            <title>Indy Parks and Recreation</title>
+        <style>
+            body
+            {
+                /*width: 750px;*/
+                /*background-color: #d8ecf3;*/
+                background-image: url("images/ParksLanding3.jpg");
+                font-family:"Oxygen";
+                margin: 0px;
+            }
+            div.head
+            {
+                background-color: #1e90ff;
+                /*background-image: url("ParksLanding.jpg");*/
+                text-align: center;
+                /*margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;*/
+                margin: 0px;
+                
+            }
+            h1 
+            {
+                font-size: 37px;
+            }
+            button
+            {
+                font-size: 20px;
+            }
+            #menu
+             {
+                margin: 0px;
+                margin-top: 0px;
+                background-color: #1e90ff;
+                text-align: center;
+                font-size: 14px;
+                line-height: 1.3em;
+             }
+            li
+            {
+                display: inline-block;
+            }
+            /*div.links
+            {
+                background-color: #1e90ff;
+                text-align: center;
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }*/
+            a
+            {
+                color: #ffffff;
+                padding: 9px;
+                font-size: 75%;
+            }
+            div.box1
+            {
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #ffffff;
+                padding: 30px;
+                text-align:center;
+            }
+            h2
+            {
+                color:#0000ff;
+            }
+            span.title
+            {
+                color:#6495ed;
+            }
+            p
+            {
+                line-height: 1.7em;
+            }
+            td
+            {
+                text-align: center;
+            }
+            img.icons
+            {
+                height: 150px;
+                width: 150px;
+            }
+            img.am
+            {
+                
+                height: 75px;
+                width: 75px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            img.social
+            {
+                height: 50px;
+                width: 50px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            div.box2
+            {
+                text-align: center;
+                padding: 25px;
+                margin-left: 120px;
+                margin-right: 120px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #ffffff;
+            }
+            td.cap
+            {
+                font-size: 22px;
+            }
+            table.head
+            {
+                width: 100%;
+                
+            }
+            td.sideleft
+            {
+                text-align: right; 
+                vertical-align: middle;
+                width:10%;
+            }
+            td.sidemiddle
+            {
+                text-align: left;
+                vertical-align:middle;
+                width:80%;
+                padding-left: 10px;
+            }
+            td.sideright
+            {
+                text-align: left;
+                vertical-align: middle;
+                width: 10%;
+            }
+        </style>
+        <script>
+            alert("Press space bar to go between home and park pages.");
+            document.addEventListener('keydown', dealWithKeyboard,false);
+            function dealWithKeyboard(e) {
+                if (e.keyCode == "32") {
+                    window.location.href = "perrypark.html";
+                }
+            }
+            var displaying = false;
+            function displayMenu() {
+                if (displaying == true) {
+                    document.getElementById("menu").innerHTML = null;
+                    
+                    displaying = false;
+                }
+                else {
+                    document.getElementById("menu").innerHTML = "Park Map<br>Park List<br>Event Calendar<br>Programs, Rentals and Memberships<br>Eagle Creek Park<br>Amenities<br>Greenways<br>Administration<br>Instagram Photo Map";
+                    
+                    displaying = true;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "head">
+            <table width = "100%">
+                <tr>
+                    <td class = "sideleft"><img src="images/parkslogo.png"></td><td class = "sidemiddle"><h1>Home</h1></td><td class = "sideright"><button type = "button" style = "width:60px;height:30px;" onclick= "displayMenu()">Menu</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "menu"> </div>
+        <!--<div class = "links">
+            <a>Park Map</a><a>Park List</a><a>Event Calendar</a><a>Programs, Rentals, and Memberships</a><a>Eagle Creek Park</a><a>Amenities</a><a>Greenways</a><a>Administration</a><a>Instagram Photo Map</a>
+        </div>-->
+        <div class = "box1">
+            <h2>Our Vision and Mission</h2>
+            <p><span class = "title">Vision</span><br>With over a century of history advancing the value of parks, Indy Parks is committed to protecting and enhancing the community's assets for the future. We will be a leader in making Indianapolis a vibrant, happy and healthy place to live. By providing premier greenspaces and recreation opportunities, we will connect all residents to nature, to the community, and to themselves. Our work is vital to contributing to the econom​​ic, social and environmental health of our city.  </p>
+            <p><span class = "title">Mission</span><br> We connect communities by providing places and experiences that inspire healthy living, social engagement, and a love of nature.</p>
+            <p><span class="title">Indy Parks offers</span><br>211 parks, 11,254 acres, 125 playgrounds, 155 sports fields, 135 miles of trails, 23 recreation centers and nature centers, 19 aquatic centers, 21 spray grounds, 13 golf courses and 4 dog parks. </p>
+        </div>
+        <div class = "box1">
+            <table width = "100%">
+                <tr>
+                    <td><img class = "icons" src = "images/newspaper.png"></td><td><img class = "icons" src = "images/calendar.png"></td><td><img class = "icons" src = "images/classes.png"></td>
+                </tr>
+                <tr>
+                    <td class = "cap">Indy Parks News</td><td class = "cap">Upcoming Events</td><td class = "cap">Classes and Programs</td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div>
+        <div class = "box2">
+            <img class = "am" src = "images/Sledding.jpg"><img class = "am" src = "images/Arts.jpg"><img class = "am" src = "images/BarkPark.jpg"><img class = "am" src = "images/Swim.jpg"><img class = "am" src = "images/mountainbiking.jpg"><img class = "am" src = "images/Greenways.jpg"><img class = "am" src = "images/Golf.jpg">
+        </div>
+        <div class = "box2">
+            <img class = "social" src = "images/pinterest.png"><img class = "social" src = "images/youtube.png"><img class = "social" src = "images/LinkedIn.png"><img class = "social" src = "images/facebok.png"><img class = "social" src = "images/twitter.png">
+        </div>
+    </body>
+</html>

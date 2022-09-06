@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <title>Perry Park</title>
+        <style>
+            body
+            {
+                background-color: #d8ecf3;
+                font-family:"Oxygen";
+                background-image: url("images/ParksLanding4.jpg");
+                /*width: 980px;*/
+                margin: 0px;
+            }
+            div.head
+            {
+                background-color: #1e90ff;
+                
+                text-align: center;
+            }
+            #menu
+             {
+                margin: 0px;
+                margin-top: 0px;
+                background-color: #1e90ff;
+                text-align: center;
+                font-size: 14px;
+                line-height: 2em;
+             }
+            h1
+            {
+                font-size: 37px;
+            }
+            button
+            {
+                font-size: 20px;
+            }
+            li
+            {
+                display: inline-block;
+            }
+            td.sideleft
+            {
+                text-align: right; 
+                vertical-align: middle;
+                width:10%;
+            }
+            td.sidemiddle
+            {
+                text-align: left;
+                vertical-align:middle;
+                width:80%;
+                padding-left: 10px;
+            }
+            td.sideright
+            {
+                text-align: left;
+                vertical-align: middle;
+                width: 10%;
+            }
+            div.links
+            {
+                background-color: #1e90ff;
+                text-align: center;
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                height: 125%;
+            }
+            
+            a.menu
+            {
+                color: #ffffff;
+                padding: 9px;
+                font-size: 75%;
+            }
+            a
+             {
+                color:#4682b4;
+             }
+            div.box1
+            {
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #ffffff;
+                padding: 30px;
+            }
+            td.main
+             {
+                vertical-align: top;
+             }
+            td.info
+            {
+                text-align: right;
+                vertical-align: top;
+            }
+            h2
+            {
+                color:#0000ff;
+            }
+            h1.parkname
+            {
+                color: #0000ff;
+                font-size: 67px;
+            }
+            span.title
+            {
+                color:#6495ed;
+                font-size: 19px;
+            }
+            p
+            {
+                line-height: 1.7em;
+                padding: 10px;
+                font-size: 17px;
+            }
+            
+            img.am
+            {
+                
+                height: 75px;
+                width: 75px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            p.details
+             {
+                font-size: 14px;
+                padding: 0px;
+             }
+            span.head
+             {
+                text-decoration: underline;
+                font-size:15px;
+             }
+            img.social
+            {
+                height: 50px;
+                width: 50px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            div.box2
+            {
+                text-align: center;
+                padding: 25px;
+                margin-left: 120px;
+                margin-right: 120px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #ffffff;
+            }
+            table.prices
+             {
+                width: 100%;
+                /*border: 3px double;*/
+                margin-left: 11px;
+                font-size: 18px;
+             }
+            
+            td.rinkfirst
+             {
+                width: 75%;
+                font-size: 19px;
+             }
+            tr.prices
+             {
+                
+             }
+            td.bold
+             {
+                font-weight: bold;
+                border: 1px solid;
+                font-size: 25px;
+                padding-bottom: 4px;
+                padding-left: 4px;
+                padding-top: 4px;
+             }
+            th
+             {
+                text-align: left;
+                border: 3px double;
+                font-size: 25px;
+                padding-bottom: 4px;
+                padding-left: 4px;
+                padding-top: 4px;
+                 font-weight: bold;
+                
+             }
+        </style>
+        <script>
+            var elem = document.getElementById("menubutton");
+            document.addEventListener('keydown', dealWithKeyboard,false);
+            function dealWithKeyboard(e) {
+                if (e.keyCode == "32") {
+                    window.location.href = "home.html";
+                }
+            }
+            var displaying = false;
+            function displayMenu() {
+                if (displaying == true) {
+                    document.getElementById("menu").innerHTML = null;
+                    /*elem.value = "Menu";*/
+                    displaying = false;
+                }
+                else {
+                    document.getElementById("menu").innerHTML = "Park Map<br>Park List<br>Event Calendar<br>Programs, Rentals and Memberships<br>Eagle Creek Park<br>Amenities<br>Greenways<br>Administration<br>Instagram Photo Map";
+                    /*elem.value = "X";*/
+                    displaying = true;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "head">
+            <div class = "head">
+            <table width = "100%">
+                <tr>
+                    <td class = "sideleft"><img src="images/parkslogo.png"></td><td class = "sidemiddle"><h1>Perry Park</h1></td><td class = "sideright"><button type = "button" style = "width:60px;height:30px;" onclick = "displayMenu()" id = menubutton>Menu</button><!--<img src = "menubutton.jpg">--></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <div id = "menu"></div>
+        <div class = "box2">
+            <img src="images/parkimg.jpg" height = 400 width = 600>
+                        <h1 class = "parkname">Perry Park</h1>
+                        <p class = "details">451 E Stop 11 Rd<br>Indianapolis, IN 46227<br>Phone: (317)888-0070<br>Park Manager: JR Fiete<br></p>
+                        <p class = "details"><a>Drive Here</a><br> <a>Bike Here</a><br> <a>Walk Here</a><br> <a>Take The Bus</a><br></p>
+                        <p class = "details"><a>Facebook Page</a></p>
+                        <p class = "details"><a>Park Map</a></p>
+                        <p class = "details"><span class = "head">Partner Organizations:</span><br><a>National Junior Tennis League (NJTL)</a><br><a>South Stars Hockey Club</a><br><a>South Indy Youth Hockey Association</a><br><a>Sycamore Ice Skating Club</a><br><a>Hoosier Lacrosse Academy</a></p>
+                        <p class = "details"><span class = "head">Hours of Operation:</span><br>Friday: 3:00 PM - 8:00 PM<br>Saturday: 2:00 PM - 8:00 PM<br>Sunday-Thursday: 3:00 PM - 5:00 PM<br>Monday: Closed</p>
+        </div>
+        <div class = "box1">
+            
+                        <p><span class = "title">Park History</span><br>Through community and business partnerships, Perry Park is making a difference.  Established in 1961 Perry Park is the only current Indy Parks ice rink.  It hosts The Perry South Stars High School hockey team, South Indy Youth Hockey league, Sycamore Figure Skating Club, and Elite Skating at the ice rink.   The park had a remodel inside during January 2013 with the help of Citizens Energy.  Perry Park Aquatic Center was remodeled in the 90’s and received upgrades like our 2 big waterslides.   </p>
+                        <p><span class = "title">FAQs</span><br> <i><u>What is your ice rink season?</u></i><br>
+                            
+                            The ice rink typically opens up the first weekend of October and that goes until the third weekend of March.  <br>
+                            <i><u>Can we bring outside food into the pool or ice rink?</u></i><br>
+                            No.  We have a concession stand, so we don’t allow any outside food into our facilities.  </p>
+                        <p><span class="title">Park Features</span><br>Perry Park boasts an NHL sized ice rink with 4 locker rooms.  We also a have concession stand that is open daily during ice rink and aquatic season.  Outside Perry Park has 2 shelters, basketball court, tennis courts, and playground.  <br>The ice rink is available to rent during the rink season upon request.  </p>
+                        <p><span class="title">Aquatic Features</span><br>Perry Park Aquatic Center will open on May 27th.  We are open Mon, Tues, Thurs, and Fri 11-6PM, Wed and Sat 11-8PM, and Sun 12-6PM.<br>Perry Park Aquatic Center has 2 large water slides including a tube slide for our patrons 48 inches or taller.  It also hosts a smaller Polar Bear slide and play area and slide for the younger children.  The pool has a zero depth entry.  <br>We have a concession stand and lawn chairs for our guests too. </p>
+                        <p><span class = "title">Facility Rental Fees</span>
+                        <table class = "prices">
+                            <tr>
+                                <th></th>
+                                <th>Marion County Resident</th>
+                                <th>Non-Resident</th>
+                            </tr>
+                            <tr>
+                                <td class = "bold">West Shelter</td>
+                                <td class = "bold">$100</td>
+                                <td class = "bold">$125</td>
+                            </tr>
+                            <tr>
+                                <td class = "bold">North Shelter</td>
+                                <td class = "bold">$150</td>
+                                <td class = "bold">$150</td>
+                            </tr>
+                            <tr>
+                                <td class = "bold">Ice RInk</td>
+                                <td class = "bold">$220/hour</td>
+                                <td class = "bold">$205/hour</td>
+                            </tr>
+                            <tr>
+                                <td class = "bold">Pool</td>
+                                <td class = "bold">$250/hour</td>
+                                <td class = "bold">$250/hour</td>
+                            </tr>
+                        </table></p>
+                        <p><span class = "title">Ice Rink Fees</span>
+                        <table class = "prices">
+                            <tr>
+                                <th class = "rinkfirst bold"><b>Attraction</b></th>
+                                <th class = "bold">Fee</th>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Adult Pick-up Hockey Admission</td>
+                                <td class = "bold">$12</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Adult Skating Admission</td>
+                                <td class = "bold">$6</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Youth (3-17) and Senior (55+) Skating Admission</td>
+                                <td class = "bold">$5</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Freestyle Youth Admission (3-17)</td>
+                                <td class = "bold">$5</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Skate Aid Rental</td>
+                                <td class = "bold">$5</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Freestyle Adult Admission</td>
+                                <td class = "bold">$7</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Skate Rental</td>
+                                <td class = "bold">$3</td>
+                            </tr>
+                        </table></p>
+                        <p><span class = "title">Pool Fees</span>
+                        <table class = "prices">
+                            <tr>
+                                <th class = "rinkfirst bold">Attraction</th>
+                                <th class = "bold">Fee</th>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Adult Weekend</td>
+                                <td class = "bold">$6</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Youth (3-17) and Senior (55+) Weekend</td>
+                                <td class = "bold">$5</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Adult Weekday</td>
+                                <td class = "bold" class = "bold">$5</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">Youth (3-17) and Senior (55+) Weekday</td>
+                                <td class = "bold">$4</td>
+                            </tr>
+                            <tr>
+                                <td class = "rinkfirst bold">2 and Under</td>
+                                <td class = "bold">Free</td>
+                            </tr>
+                        </table></p>
+                    
+                    
+                        
+                    
+</div>
+        
+        <div class = "box2">
+            <img class = "am" src = "images/Sledding.jpg"><img class = "am" src = "images/Arts.jpg"><img class = "am" src = "images/BarkPark.jpg"><img class = "am" src = "images/Swim.jpg"><img class = "am" src = "images/mountainbiking.jpg"><img class = "am" src = "images/Greenways.jpg"><img class = "am" src = "images/Golf.jpg">
+        </div>
+        <div class = "box2">
+            <img class = "social" src = "images/pinterest.png"><img class = "social" src = "images/youtube.png"><img class = "social" src = "images/LinkedIn.png"><img class = "social" src = "images/facebok.png"><img class = "social" src = "images/twitter.png">
+        </div>
+    </body>
+</html>
